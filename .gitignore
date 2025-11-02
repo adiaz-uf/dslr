@@ -6,3 +6,4 @@ env/
 .ipynb_*
 __pycache__
 trained_params.json
+houses.csv
