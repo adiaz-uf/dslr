@@ -179,6 +179,7 @@ def main():
 
     # Save parameters to Json
     params_to_save = {
+        'technique': 'Stochastic Gradient Descent',
         'num_labels': num_labels,
         'theta': trained_theta.tolist(),
         'feature_names': fields.tolist(),
