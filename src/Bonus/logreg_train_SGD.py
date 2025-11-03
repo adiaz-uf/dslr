@@ -186,10 +186,11 @@ def main():
         'house_mapping': house_mapping,
     }
 
-    with open('trained_params.json', 'w') as f:
+    output_file = 'trained_params.json'
+    with open(output_file, 'w') as f:
         json.dump(params_to_save, f, indent=4)
-        
-    print("Success: Parameters saved in 'trained_params.json'")
+
+    print(f"Success: Parameters saved in '{output_file}'")
     print(f"Dimensions of saved theta (Classes x coefficients): {trained_theta.shape}")
 
 if __name__ == "__main__":
