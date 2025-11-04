@@ -16,6 +16,12 @@ describe:
 train:
 	@venv/bin/python3 src/V3.Logistic_Regression/logreg_train.py data/dataset_train.csv
 
+train-minibatch:
+	@venv/bin/python3 src/Bonus/logreg_train_minibatch.py data/dataset_train.csv
+
+train-sgd:
+	@venv/bin/python3 src/Bonus/logreg_train_SGD.py data/dataset_train.csv
+
 predict:
 	@venv/bin/python3 src/V3.Logistic_Regression/logreg_predict.py data/dataset_test.csv trained_params.json
 
