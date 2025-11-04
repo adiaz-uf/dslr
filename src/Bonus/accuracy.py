@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import sys
+from sklearn.metrics import accuracy_score
 
 def calculate_accuracy(y_pred, y_real):
     correct_predictions = (y_pred == y_real)
@@ -28,7 +29,9 @@ def main():
 
 
         accuracy = calculate_accuracy(y_pred, y_real)
+        accuracy_sklearn = accuracy_score(y_real, y_pred) * 100
         print(f"Accuracy: {accuracy:.4}%")
+        print(f"Accuracy (sklearn): {accuracy_sklearn:.4}%")
 
     except FileNotFoundError:
         print(f"Error: CSV file not found: {sys.argv[1]}")

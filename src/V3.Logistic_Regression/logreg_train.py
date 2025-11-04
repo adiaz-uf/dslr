@@ -12,7 +12,7 @@ from imputation import *
 
 # Train Variables
 iterations = 2000
-learning_rate = 0.01
+learning_rate = 0.1
 
 
 # Logistic Regression Base Functions

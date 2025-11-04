@@ -16,6 +16,9 @@ describe:
 train:
 	@venv/bin/python3 src/V3.Logistic_Regression/logreg_train.py data/dataset_train.csv
 
+predict:
+	@venv/bin/python3 src/V3.Logistic_Regression/logreg_predict.py data/dataset_test.csv trained_params.json
+
 accuracy:
-	@venv/bin/python3 src/Bonus/accuracy.py data/houses.csv data/dataset_train.csv
+	@venv/bin/python3 src/Bonus/accuracy.py houses.csv data/dataset_train.csv
 

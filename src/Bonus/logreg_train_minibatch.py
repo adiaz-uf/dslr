@@ -21,21 +21,6 @@ epsilon = 1e-8
 
 
 # Logistic Regression Base Functions
-
-def sigmoid(z):
-    """
-    Sigmoid activation function
-
-    Args:
-        z: Input value(s)
-
-    Returns:
-        Sigmoid output
-    """
-    z = np.clip(z, -500, 500)
-    return 1 / (1 + np.exp(-z))
-
-
 def softmax(z):
     """
     Softmax function for multinomial classification
@@ -75,7 +60,7 @@ def compute_cost(X, y, W):
     return cost
 
 
-def minibatch_gradient_descent(X, y, learning_rate=0.1, num_epochs=100, batch_size=32, epsilon=1e-8):
+def minibatch_gradient_descent(X, y, learning_rate=0.01, num_epochs=100, batch_size=32, epsilon=1e-8):
     """
     Mini-batch gradient descent for multinomial logistic regression
 

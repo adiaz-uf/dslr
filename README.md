@@ -5,15 +5,25 @@
 > Create python virtual enviroment and download dependencies
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
+python -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
 Run the jupyter enviroment
 
 ```bash
-jupyter lab
+make jupyter
+```
+
+Run train program
+```bash
+make train
+```
+
+Run predict program
+```bash
+make predict
 ```
 
 ## Data exploration
