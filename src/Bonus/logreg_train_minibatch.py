@@ -275,7 +275,7 @@ def main():
         'technique': 'Mini-Batch Gradient Descent',
         'num_labels': num_labels,
         'theta': W_optimal.T.tolist(),  # Transpose to match one-vs-all format
-        'feature_names': ['Bias'] + fields.tolist(),
+        'feature_names': fields.tolist(),
         'house_mapping': house_mapping_1indexed,
         'hyperparameters': {
             'learning_rate': learning_rate,
