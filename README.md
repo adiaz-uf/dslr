@@ -124,44 +124,6 @@ make jupyter
 
 Opens JupyterLab to explore interactive visualization notebooks.
 
-### Model Training
-
-#### Standard training (Batch Gradient Descent)
-```bash
-make train
-```
-
-Trains the model and saves weights to `trained_params.json`. Displays cost evolution graphs during training.
-
-
-
-
-#### Training with Mini-batch
-```bash
-make train-minibatch
-```
-
-#### Training with SGD
-```bash
-make train-sgd
-```
-
-### Prediction
-
-```bash
-make predict
-```
-
-Generates predictions for test dataset and saves them to `houses.csv`.
-
-### Accuracy Evaluation
-
-```bash
-make accuracy
-```
-
-Calculates model accuracy by comparing predictions with training dataset.
-
 ## 📈 Data Exploration
 
 ### Heatmap
@@ -191,6 +153,46 @@ Distribution of grades by Hogwarts house. Allows identification of which subject
 Multidimensional visualization showing all combinations of variable pairs colored by house.
 
 ![Pair plot](output/pair_plot.png)
+
+### Model Training
+
+#### Standard training (Batch Gradient Descent)
+```bash
+make train
+```
+
+Trains the model and saves weights to `trained_params.json`. Displays cost evolution graphs during training.
+
+<img width="800" height="600" alt="dslr-cost-plot" src="https://github.com/user-attachments/assets/210e2ed9-7e05-48df-8987-0105dd4beb3d" />
+
+
+#### Training with Mini-batch
+```bash
+make train-minibatch
+```
+
+#### Training with SGD
+```bash
+make train-sgd
+```
+
+### Prediction
+
+```bash
+make predict
+```
+
+Generates predictions for test dataset and saves them to `houses.csv`.
+
+<img width="672" height="493" alt="dslr-predict" src="https://github.com/user-attachments/assets/fe97765b-900f-489f-a196-5958a69e2181" />
+
+### Accuracy Evaluation
+
+```bash
+make accuracy
+```
+
+Calculates model accuracy by comparing predictions with training dataset.
 
 ## 🧮 Mathematical Foundations
 
@@ -253,3 +255,4 @@ This project was a team effort. You can checkout the team members here:
 ## 📄 License
 
 This project is open source and available for educational purposes.
+
